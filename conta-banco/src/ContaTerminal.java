@@ -16,6 +16,11 @@ public class ContaTerminal {
         System.out.println("Olá por gentileza informe o número da Conta!");
         int conta = scanner.nextInt();
 
-        System.out.println("Olá " + nomeCli +", obrigado por criar uma conta em nosso banco, sua agência é "+agencia+", conta "+conta+" e seu saldo de "+saldo+" já está disponível para saque");
+        if(conta == 1021){
+            System.out.println("Olá " + nomeCli +", obrigado por criar uma conta em nosso banco, sua agência é "
+            +agencia+", conta "+conta+" e seu saldo de "+saldo+" já está disponível para saque");
+        }else{
+            System.out.println("Desculpe mas não encontramos essa conta em nossa base de dados!");
+        }
     }
 }
